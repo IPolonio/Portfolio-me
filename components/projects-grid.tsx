@@ -91,7 +91,7 @@ const projects = [
     description:
       "A Satirical magazine design based on the fiction character the joker",
     role: "  Designer",
-    tools: ["Figma", "Photoshop"],
+    tools: ["Illustrator", "Photoshop"],
     figmaEmbed: "",  
     liveUrl: ""      
   },
