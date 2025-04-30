@@ -4,6 +4,7 @@ import { useState } from "react"
 import { motion, AnimatePresence } from "framer-motion"
 import { Button } from "@/components/ui/button"
 import { Tabs, TabsList, TabsTrigger } from "@/components/ui/tabs"
+import Image from 'next/image'
 
 // Prototype data
 const prototype = {
@@ -11,8 +12,8 @@ const prototype = {
   title: "Mobile Banking App",
   description:
     "Interactive prototype for a mobile banking application with account management and transaction features.",
-  wireframeImage: "/placeholder.svg?height=600&width=300",
-  finalImage: "/placeholder.svg?height=600&width=300",
+  wireframeImage: "/images/Home.svg",  // Note: files should be in public/images/
+  finalImage: "/images/Home.svg",
   hotspots: [
     { x: 30, y: 20, label: "Account Overview" },
     { x: 70, y: 40, label: "Transaction History" },
@@ -105,9 +106,10 @@ export default function PrototypeZone() {
                     }}
                   >
                     <div className="absolute inset-0">
-                      <img
+                      <Image 
                         src={viewMode === "wireframe" ? prototype.wireframeImage : prototype.finalImage}
                         alt={prototype.title}
+                        fill
                         className="w-full h-full object-cover"
                       />
                     </div>

@@ -86,8 +86,8 @@ export default function HeroSection() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5, delay: 0.4 }}
         >
-          <span className="block">Design</span>
-          <span className="gradient-text">Portfolio</span>
+          <span className="block">Isaac</span>
+          <span className="gradient-text">Polonio</span>
         </motion.h1>
 
         <motion.p

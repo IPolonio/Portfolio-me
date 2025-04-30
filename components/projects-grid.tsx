@@ -11,44 +11,44 @@ import { cn } from "@/lib/utils"
 const projects = [
   {
     id: 1,
-    title: "Mobile Banking App",
+    title: "Digital Church website Boldfaith",
     category: "Figma Prototypes",
-    tags: ["UX/UI", "Fintech", "Mobile"],
-    thumbnail: "/placeholder.svg?height=600&width=800",
+    tags: ["UX/UI", "Branding", "Bussiness"],
+    thumbnail: "/images/Boldfaith-1.png",
     images: [
-      "/placeholder.svg?height=800&width=1200",
-      "/placeholder.svg?height=800&width=1200",
-      "/placeholder.svg?height=800&width=1200",
+      "/images/Boldfaith-1.png",
+      "/images/Boldfaith-3.png",
+      "/images/Boldfaith-5.png",
     ],
     description:
-      "A comprehensive mobile banking application designed to simplify financial management with intuitive navigation and secure transaction flows.",
-    role: "Lead UX/UI Designer",
-    tools: ["Figma", "Protopie", "After Effects"],
-    figmaEmbed: "https://www.figma.com/embed?embed_host=share&url=https://www.figma.com/file/example",
+      "An intuitive and user friendly web page prototype made in figma and lottie animations.",
+    role: "Student",
+    tools: ["Figma", "Figma Prototype", "Illustrator"],
+    figmaEmbed: "https://embed.figma.com/proto/4lUMhw07GOPJHp3l9QGuZM/Yelp-persona?page-id=0%3A1&node-id=167-1841&viewport=8612%2C-17867%2C0.98&scaling=min-zoom&content-scaling=fixed&starting-point-node-id=167%3A1841&embed-host=share",
   },
   {
     id: 2,
-    title: "E-commerce Website Redesign",
-    category: "Web Design",
-    tags: ["E-commerce", "Responsive", "UI Design"],
-    thumbnail: "/placeholder.svg?height=600&width=800",
+    title: "Project / job searching app Mattesy",
+    category: "Figma Prototypes",
+    tags: ["Bussiness", "Responsive", "UI Design"],
+    thumbnail: "/images/Mattesy/mattesyhome.png",
     images: [
-      "/placeholder.svg?height=800&width=1200",
-      "/placeholder.svg?height=800&width=1200",
-      "/placeholder.svg?height=800&width=1200",
+      "/images/church-1.png",
+      "/images/church-2.png",
+      "/images/church-3.png",
     ],
     description:
-      "A complete overhaul of an e-commerce platform focusing on conversion optimization and improved user experience across all devices.",
-    role: "UI Designer",
+      "A complete prototype of a job search / collaboration platform made completely in figma",
+    role: "Student",
     tools: ["Figma", "Illustrator"],
-    figmaEmbed: "https://www.figma.com/embed?embed_host=share&url=https://www.figma.com/file/example",
+    figmaEmbed: "https://embed.figma.com/proto/ghWcpViVAluEcyy2Do5Aad/Mattesy?page-id=0%3A1&node-id=28-3641&viewport=45%2C317%2C0.09&scaling=scale-down&content-scaling=fixed&starting-point-node-id=28%3A4903&show-proto-sidebar=1&embed-host=share",
   },
   {
     id: 3,
-    title: "Smart Home Dashboard",
-    category: "Motion Design",
-    tags: ["IoT", "Dashboard", "Animation"],
-    thumbnail: "/placeholder.svg?height=600&width=800",
+    title: "F1 webflow site",
+    category: "Web Design",
+    tags: ["CMS", "Dashboard", "Webflow"],
+    thumbnail: "/images/f1/main_page.png",
     images: [
       "/placeholder.svg?height=800&width=1200",
       "/placeholder.svg?height=800&width=1200",
@@ -58,8 +58,9 @@ const projects = [
       "An interactive dashboard for controlling smart home devices with animated transitions and data visualizations.",
     role: "Motion Designer",
     tools: ["Figma", "After Effects", "Lottie"],
-    figmaEmbed: "https://www.figma.com/embed?embed_host=share&url=https://www.figma.com/file/example",
-  },
+    figmaEmbed: "",
+    liveUrl: "https://isaacs-site-8ecc03.webflow.io/"
+},
   {
     id: 4,
     title: "Health & Fitness App",
@@ -356,19 +357,27 @@ export default function ProjectsGrid() {
                     </div>
 
                     {/* Figma embed */}
-                    <motion.div
-                      className="mt-8"
-                      initial={{ opacity: 0, y: 20 }}
-                      animate={{ opacity: 1, y: 0 }}
-                      transition={{ duration: 0.3, delay: 0.4 }}
-                    >
-                      <h3 className="text-xl font-heading font-medium mb-4">Interactive Prototype</h3>
-                      <div className="relative aspect-video rounded-lg border border-secondary overflow-hidden bg-secondary/10">
-                        <div className="absolute inset-0 flex items-center justify-center">
-                          <p className="text-primary/60">Figma prototype would be embedded here</p>
+                    {selectedProject.figmaEmbed && (
+                      <motion.div
+                        className="mt-8 -mx-4 md:-mx-6 lg:mx-0"
+                        initial={{ opacity: 0, y: 20 }}
+                        animate={{ opacity: 1, y: 0 }}
+                        transition={{ duration: 0.3, delay: 0.4 }}
+                      >
+                        <h3 className="text-xl font-heading font-medium mb-4 px-4 md:px-6 lg:px-0">Interactive Prototype</h3>
+                        <div className="relative w-full overflow-x-auto">
+                          <div className="relative w-[1440px] mx-auto rounded-lg border border-secondary overflow-hidden">
+                            <iframe
+                              style={{ border: "1px solid rgba(0, 0, 0, 0.1)" }}
+                              width="1440"
+                              height="800"
+                              src={selectedProject.figmaEmbed}
+                              allowFullScreen
+                            />
+                          </div>
                         </div>
-                      </div>
-                    </motion.div>
+                      </motion.div>
+                    )}
                   </motion.div>
 
                   {/* Project details */}
@@ -410,7 +419,16 @@ export default function ProjectsGrid() {
                       </div>
                     </div>
 
-                    <Button className="animated-button text-white w-full">View Live Project</Button>
+                    // Update the View Live Project button to handle both Figma and live URLs
+                    <Button 
+                      className="animated-button text-white w-full"
+                      onClick={() => {
+                        const url = selectedProject.liveUrl || selectedProject.figmaEmbed;
+                        if (url) window.open(url, '_blank');
+                      }}
+                    >
+                      View Live Project
+                    </Button>
                   </motion.div>
                 </div>
               </div>

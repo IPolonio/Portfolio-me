@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_1" xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1024 1024">
+  <!-- Generator: Adobe Illustrator 29.5.0, SVG Export Plug-In . SVG Version: 2.1.0 Build 137)  -->
+  <defs>
+    <style>
+      .st0 {
+        clip-path: url(#clippath-6);
+      }
+
+      .st1 {
+        clip-path: url(#clippath-7);
+      }
+
+      .st2 {
+        clip-path: url(#clippath-4);
+      }
+
+      .st3 {
+        fill: #fff;
+      }
+
+      .st4, .st5 {
+        fill: none;
+      }
+
+      .st6 {
+        clip-path: url(#clippath-1);
+      }
+
+      .st7 {
+        clip-path: url(#clippath-5);
+      }
+
+      .st5 {
+        clip-path: url(#clippath);
+      }
+
+      .st8 {
+        clip-path: url(#clippath-8);
+      }
+
+      .st9 {
+        clip-path: url(#clippath-3);
+      }
+
+      .st10 {
+        clip-path: url(#clippath-2);
+      }
+    </style>
+    <clipPath id="clippath">
+      <polygon class="st4" points="-1505 -184 -1504 -184 -1505 -183 -1505 -184"/>
+    </clipPath>
+    <clipPath id="clippath-1">
+      <polygon class="st5" points="-1507 -186 -1508 -186 -1507 -187 -1507 -186"/>
+    </clipPath>
+    <clipPath id="clippath-2">
+      <path class="st4" d="M-886-123v31h31v-31h-31ZM-948-123v31h31v-31h-31ZM-1041-123V-30h31v-93h-31ZM-1103-123v31h31v-31h-31ZM-1134-123v31h31v-31h-31ZM-824-92v31h31v-31h-31ZM-979-92v31h31v-31h-31ZM-1196-92V1h31v-93h-31ZM-948-61V94h31V-61h-31ZM-1072-61V32h31V-61h-31ZM-1103-61v31h31v-31h-31ZM-1134-61v31h31v-31h-31ZM-1165-61V63h31V-61h-31ZM-917,1v31h31V1h-31ZM-1010,1v93h31V1h-31ZM-1041,1v31h31V1h-31ZM-1134,1v31h31V1h-31ZM-1103,32v31h31v-31h-31ZM-1196,32v62h31V32h-31ZM-824,63v62h31v-62h-31ZM-886,63v372h31V63h-31ZM-1072,63v62h31v-62h-31ZM-1134,63v155h31V63h-31ZM-917,94v62h31v-62h-31ZM-979,94v31h31v-31h-31ZM-1103,94v62h31v-62h-31ZM-1165,94v31h31v-31h-31ZM-607,125v93h31v-93h-31ZM-638,125v62h31v-62h-31ZM-669,125v31h31v-31h-31ZM-731,125v31h31v-31h-31ZM-793,125v31h31v-31h-31ZM-855,125v62h31v-62h-31ZM-1041,125v62h31v-62h-31ZM-1258,125v31h31v-31h-31ZM-1382,125v62h31v-62h-31ZM-1413,125v31h31v-31h-31ZM-576,156v31h31v-31h-31ZM-700,156v93h31v-93h-31ZM-762,156v31h31v-31h-31ZM-948,156v62h31v-62h-31ZM-979,156v62h31v-62h-31ZM-1072,156v31h31v-31h-31ZM-1196,156v31h31v-31h-31ZM-1227,156v93h31v-93h-31ZM-1320,156v62h31v-62h-31ZM-824,187v31h31v-31h-31ZM-917,187v93h31v-93h-31ZM-1010,187v31h31v-31h-31ZM-1103,187v31h31v-31h-31ZM-1258,187v31h31v-31h-31ZM-1351,187v31h31v-31h-31ZM-576,218v155h31v-155h-31ZM-638,218v31h31v-31h-31ZM-669,218v31h31v-31h-31ZM-731,218v31h31v-31h-31ZM-762,218v62h31v-62h-31ZM-793,218v31h31v-31h-31ZM-1165,218v124h31v-124h-31ZM-1196,218v31h31v-31h-31ZM-1289,218v31h31v-31h-31ZM-1413,218v62h31v-62h-31ZM-607,249v31h31v-31h-31ZM-948,249v62h31v-62h-31ZM-1041,249v31h31v-31h-31ZM-1258,249v31h31v-31h-31ZM-1320,249v93h31v-93h-31ZM-669,280v31h31v-31h-31ZM-824,280v62h31v-62h-31ZM-855,280v31h31v-31h-31ZM-979,280v62h31v-62h-31ZM-1010,280v31h31v-31h-31ZM-1134,280v31h31v-31h-31ZM-1227,280v248h31v-248h-31ZM-1289,280v31h31v-31h-31ZM-607,311v31h31v-31h-31ZM-638,311v93h31v-93h-31ZM-700,311v31h31v-31h-31ZM-731,311v62h31v-62h-31ZM-793,311v31h31v-31h-31ZM-1072,311v248h31v-248h-31ZM-1258,311v31h31v-31h-31ZM-1351,311v31h31v-31h-31ZM-1382,311v62h31v-62h-31ZM-1010,342v186h31v-186h-31ZM-1041,342v31h31v-31h-31ZM-1103,342v62h31v-62h-31ZM-1134,342v31h31v-31h-31ZM-1196,342v62h31v-62h-31ZM-1444,342v31h31v-31h-31ZM-607,373v31h31v-31h-31ZM-669,373v31h31v-31h-31ZM-762,373v62h31v-62h-31ZM-824,373v341h31v-341h-31ZM-917,373v62h31v-62h-31ZM-948,373v93h31v-93h-31ZM-979,373v93h31v-93h-31ZM-1258,373v31h31v-31h-31ZM-1289,373v31h31v-31h-31ZM-1413,373v31h31v-31h-31ZM-855,404v31h31v-31h-31ZM-1134,404v31h31v-31h-31ZM-1165,404v31h31v-31h-31ZM-1320,404v93h31v-93h-31ZM-1351,404v31h31v-31h-31ZM-576,435v93h31v-93h-31ZM-669,435v62h31v-62h-31ZM-700,435v31h31v-31h-31ZM-731,435v31h31v-31h-31ZM-793,435v93h31v-93h-31ZM-1103,435v31h31v-31h-31ZM-1258,435v31h31v-31h-31ZM-1413,435v93h31v-93h-31ZM-1444,435v31h31v-31h-31ZM-762,466v62h31v-62h-31ZM-855,466v31h31v-31h-31ZM-917,466v93h31v-93h-31ZM-1041,466v31h31v-31h-31ZM-1196,466v31h31v-31h-31ZM-1289,466v31h31v-31h-31ZM-1351,466v31h31v-31h-31ZM-607,497v31h31v-31h-31ZM-638,497v31h31v-31h-31ZM-700,497v217h31v-217h-31ZM-731,497v31h31v-31h-31ZM-948,497v62h31v-62h-31ZM-1258,497v31h31v-31h-31ZM-1382,497v31h31v-31h-31ZM-1444,497v31h31v-31h-31ZM-855,528v93h31v-93h-31ZM-979,528v31h31v-31h-31ZM-762,559v31h31v-31h-31ZM-886,559v93h31v-93h-31ZM-1010,559v124h31v-124h-31ZM-1041,559v62h31v-62h-31ZM-1134,559v31h31v-31h-31ZM-576,590v31h31v-31h-31ZM-638,590v31h31v-31h-31ZM-1072,590v31h31v-31h-31ZM-1103,590v31h31v-31h-31ZM-1165,590v62h31v-62h-31ZM-607,621v31h31v-31h-31ZM-669,621v62h31v-62h-31ZM-731,621v31h31v-31h-31ZM-762,621v31h31v-31h-31ZM-793,621v62h31v-62h-31ZM-948,621v62h31v-62h-31ZM-979,621v62h31v-62h-31ZM-1134,621v124h31v-124h-31ZM-576,652v31h31v-31h-31ZM-917,652v62h31v-62h-31ZM-1041,652v93h31v-93h-31ZM-762,683v62h31v-62h-31ZM-855,683v31h31v-31h-31ZM-1165,683v31h31v-31h-31ZM-1196,683v62h31v-62h-31ZM-576,714v31h31v-31h-31ZM-607,714v31h31v-31h-31ZM-669,714v31h31v-31h-31ZM-731,714v31h31v-31h-31ZM-793,714v31h31v-31h-31ZM-1010,714v62h31v-62h-31ZM-1072,714v62h31v-62h-31ZM-638,745v31h31v-31h-31ZM-700,745v31h31v-31h-31ZM-855,745v31h31v-31h-31ZM-948,745v31h31v-31h-31ZM-979,745v31h31v-31h-31ZM-1103,745v31h31v-31h-31ZM-1165,745v31h31v-31h-31Z"/>
+    </clipPath>
+    <clipPath id="clippath-3">
+      <path class="st4" d="M-1258-123V94h31V-123h-31ZM-1289-123v31h31v-31h-31ZM-1320-123v31h31v-31h-31ZM-1351-123v31h31v-31h-31ZM-1382-123v31h31v-31h-31ZM-1413-123v31h31v-31h-31ZM-1444-123V94h31V-123h-31ZM-1289,63v31h31v-31h-31ZM-1320,63v31h31v-31h-31ZM-1351,63v31h31v-31h-31ZM-1382,63v31h31v-31h-31ZM-1413,63v31h31v-31h-31Z"/>
+    </clipPath>
+    <clipPath id="clippath-4">
+      <path class="st4" d="M-1320-61V32h31V-61h-31ZM-1351-61V32h31V-61h-31ZM-1382-61V32h31V-61h-31Z"/>
+    </clipPath>
+    <clipPath id="clippath-5">
+      <path class="st4" d="M-576-123V94h31V-123h-31ZM-607-123v31h31v-31h-31ZM-638-123v31h31v-31h-31ZM-669-123v31h31v-31h-31ZM-700-123v31h31v-31h-31ZM-731-123v31h31v-31h-31ZM-762-123V94h31V-123h-31ZM-607,63v31h31v-31h-31ZM-638,63v31h31v-31h-31ZM-669,63v31h31v-31h-31ZM-700,63v31h31v-31h-31ZM-731,63v31h31v-31h-31Z"/>
+    </clipPath>
+    <clipPath id="clippath-6">
+      <path class="st4" d="M-638-61V32h31V-61h-31ZM-669-61V32h31V-61h-31ZM-700-61V32h31V-61h-31Z"/>
+    </clipPath>
+    <clipPath id="clippath-7">
+      <path class="st4" d="M-1258,559v217h31v-217h-31ZM-1289,559v31h31v-31h-31ZM-1320,559v31h31v-31h-31ZM-1351,559v31h31v-31h-31ZM-1382,559v31h31v-31h-31ZM-1413,559v31h31v-31h-31ZM-1444,559v217h31v-217h-31ZM-1289,745v31h31v-31h-31ZM-1320,745v31h31v-31h-31ZM-1351,745v31h31v-31h-31ZM-1382,745v31h31v-31h-31ZM-1413,745v31h31v-31h-31Z"/>
+    </clipPath>
+    <clipPath id="clippath-8">
+      <path class="st4" d="M-1320,621v93h31v-93h-31ZM-1351,621v93h31v-93h-31ZM-1382,621v93h31v-93h-31Z"/>
+    </clipPath>
+  </defs>
+  <g class="st6">
+    <rect class="st3" x="-1506" y="-185" width="1024" height="1024"/>
+  </g>
+  <g class="st10">
+    <rect x="-1444" y="-123" width="899" height="899"/>
+  </g>
+  <g class="st9">
+    <rect x="-1444" y="-123" width="217" height="217"/>
+  </g>
+  <g class="st2">
+    <rect x="-1382" y="-61" width="93" height="93"/>
+  </g>
+  <g class="st7">
+    <rect x="-762" y="-123" width="217" height="217"/>
+  </g>
+  <g class="st0">
+    <rect x="-700" y="-61" width="93" height="93"/>
+  </g>
+  <g class="st1">
+    <rect x="-1444" y="559" width="217" height="217"/>
+  </g>
+  <g class="st8">
+    <rect x="-1382" y="621" width="93" height="93"/>
+  </g>
+</svg>
