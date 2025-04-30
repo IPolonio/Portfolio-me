@@ -1,26 +1,213 @@
-@import "tailwindcss";
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
+@layer base {
   :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+    --background: 0 0% 94%;
+    --foreground: 200 100% 4%;
+
+    --card: 0 0% 94%;
+    --card-foreground: 200 100% 4%;
+
+    --popover: 0 0% 94%;
+    --popover-foreground: 200 100% 4%;
+
+    --primary: 200 100% 4%;
+    --primary-foreground: 0 0% 94%;
+
+    --secondary: 160 95% 10%;
+    --secondary-foreground: 0 0% 94%;
+
+    --accent: 160 100% 21%;
+    --accent-foreground: 0 0% 94%;
+
+    --highlight: 160 75% 38%;
+    --highlight-foreground: 0 0% 94%;
+
+    --glow: 160 100% 40%;
+    --glow-foreground: 0 0% 94%;
+
+    --muted: 0 0% 94%;
+    --muted-foreground: 200 100% 4%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 94%;
+
+    --border: 160 95% 10%;
+    --input: 160 95% 10%;
+    --ring: 160 100% 21%;
+
+    --radius: 0.5rem;
+  }
+
+  .dark {
+    --background: 200 100% 4%;
+    --foreground: 0 0% 94%;
+
+    --card: 200 100% 4%;
+    --card-foreground: 0 0% 94%;
+
+    --popover: 200 100% 4%;
+    --popover-foreground: 0 0% 94%;
+
+    --primary: 0 0% 94%;
+    --primary-foreground: 200 100% 4%;
+
+    --secondary: 160 95% 10%;
+    --secondary-foreground: 0 0% 94%;
+
+    --accent: 160 100% 21%;
+    --accent-foreground: 0 0% 94%;
+
+    --highlight: 160 75% 38%;
+    --highlight-foreground: 0 0% 94%;
+
+    --glow: 160 100% 40%;
+    --glow-foreground: 0 0% 94%;
+
+    --muted: 200 100% 4%;
+    --muted-foreground: 0 0% 94%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 94%;
+
+    --border: 160 95% 10%;
+    --input: 160 95% 10%;
+    --ring: 160 100% 21%;
   }
 }
 
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+@layer base {
+  * {
+    @apply border-[hsl(var(--border))];
+  }
+  
+  body {
+    @apply bg-[hsl(var(--background))] text-[hsl(var(--foreground))];
+  }
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-family: var(--font-space-grotesk);
+  }
+  p,
+  span,
+  div,
+  a,
+  button {
+    font-family: var(--font-inter);
+  }
+}
+
+.font-heading {
+  font-family: var(--font-space-grotesk);
+}
+
+.font-sans {
+  font-family: var(--font-inter);
+}
+
+/* Parallax effect */
+.parallax-layer {
+  will-change: transform;
+}
+
+/* Project card hover effects */
+.project-card {
+  @reference relative overflow-hidden rounded-lg transition-all duration-500;
+}
+
+.project-card-content {
+  @reference absolute inset-0 flex flex-col justify-end p-6 opacity-0 transition-opacity duration-300;
+  background: linear-gradient(to top, rgba(1, 11, 19, 0.9), rgba(1, 11, 19, 0.3), transparent);
+}
+
+.project-card:hover .project-card-content {
+  @reference opacity-100;
+}
+
+.project-card:hover img {
+  @reference scale-105;
+}
+
+/* Gradient text */
+.gradient-text {
+  @apply bg-clip-text text-transparent;
+  background-image: linear-gradient(to right, hsl(var(--highlight)), hsl(var(--glow)));
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+/* Animated button - Fixed hover effect */
+.animated-button {
+  @reference relative overflow-hidden transition-all duration-300;
+  background: linear-gradient(90deg, hsl(var(--accent)), hsl(var(--highlight)));
+  background-size: 200% 100%;
+  background-position: 0% 0%;
+}
+
+.animated-button:hover {
+  background-position: 100% 0%;
+}
+
+/* Remove the ::before pseudo-element that was covering text */
+.animated-button span,
+.animated-button svg {
+  @apply relative z-10;
+}
+
+/* Pulsing animation for hotspots */
+@keyframes pulse {
+  0% {
+    transform: scale(0.95);
+    box-shadow: 0 0 0 0 hsla(var(--highlight), 0.7);
+  }
+
+  70% {
+    transform: scale(1);
+    box-shadow: 0 0 0 10px hsla(var(--highlight), 0);
+  }
+
+  100% {
+    transform: scale(0.95);
+    box-shadow: 0 0 0 0 hsla(var(--highlight), 0);
+  }
+}
+
+.pulse {
+  animation: pulse 2s infinite;
+}
+
+/* Project card hover effects */
+.project-card {
+  @apply relative overflow-hidden rounded-lg transition-all duration-500;
+}
+
+.project-card-content {
+  @apply absolute inset-0 flex flex-col justify-end p-6 opacity-0 transition-opacity duration-300;
+  background: linear-gradient(to top, rgba(1, 11, 19, 0.9), rgba(1, 11, 19, 0.3), transparent);
+}
+
+.project-card:hover .project-card-content {
+  @apply opacity-100;
+}
+
+.project-card:hover img {
+  @apply scale-105;
+}
+
+/* Animated button */
+.animated-button {
+  @apply relative overflow-hidden transition-all duration-300;
+  background: linear-gradient(90deg, hsl(var(--accent)), hsl(var(--highlight)));
+  background-size: 200% 100%;
+  background-position: 0% 0%;
+}
+
+.animated-button:hover {
+  background-position: 100% 0%;
 }
