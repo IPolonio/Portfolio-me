@@ -33,14 +33,15 @@ const projects = [
     tags: ["Bussiness", "Responsive", "UI Design"],
     thumbnail: "/images/Mattesy/mattesyhome.png",
     images: [
-      "/images/Mattesy/Home.png",
-      
+      "/images/Mattesy/Home.svg",
+      "/images/Mattesy/Apply.svg",
+      "/images/Mattesy/apply2.svg",
     ],
     description:
       "A complete prototype of a job search / collaboration platform made completely in figma",
     role: "Student",
     tools: ["Figma", "Illustrator"],
-    figmaEmbed: "https://embed.figma.com/proto/ghWcpViVAluEcyy2Do5Aad/Mattesy?page-id=0%3A1&node-id=28-3641&viewport=45%2C317%2C0.09&scaling=scale-down&content-scaling=fixed&starting-point-node-id=28%3A4903&show-proto-sidebar=1&embed-host=share",
+    figmaEmbed: "https://embed.figma.com/proto/ghWcpViVAluEcyy2Do5Aad/Mattesy?page-id=0%3A1&node-id=28-3641&viewport=136%2C198%2C0.08&scaling=scale-down&content-scaling=fixed&starting-point-node-id=28%3A4903&embed-host=share",
   },
   {
     id: 3,
@@ -55,7 +56,7 @@ const projects = [
     ],
     description:
       "A webflow site for a F1 racing team showcasing their upcoming races, results, and team history.",
-    role: " Visaul developer",
+    role: " Visual developer",
     tools: ["Webflow", "HTML/CSS", "Javascript"],
     figmaEmbed: "",
     liveUrl: "https://isaacs-site-8ecc03.webflow.io/"
@@ -89,7 +90,7 @@ const projects = [
     ],
     description:
       "A Satirical magazine design based on the fiction character the joker",
-    role: "Senior UI Designer",
+    role: "  Designer",
     tools: ["Figma", "Photoshop"],
     figmaEmbed: "",  
     liveUrl: ""      

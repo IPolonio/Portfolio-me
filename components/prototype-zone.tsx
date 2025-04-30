@@ -12,8 +12,8 @@ const prototype = {
   title: "Mattesy - Job Search Platform",
   description:
     "A complete prototype of a job search and collaboration platform designed to connect professionals and streamline the job search process.",
-  wireframeImage: "/images/Mattesy/Home.png",
-  finalImage: "/images/Mattesy/Home.png",
+  wireframeImage: "/images/Mattesy/Home.svg",
+  finalImage: "/images/Mattesy/Home.svg",
   figmaUrl: "https://embed.figma.com/proto/ghWcpViVAluEcyy2Do5Aad/Mattesy?page-id=0%3A1&node-id=28-3641&viewport=45%2C317%2C0.09&scaling=scale-down&content-scaling=fixed&starting-point-node-id=28%3A4903&show-proto-sidebar=1&embed-host=share",
   hotspots: [
     { x: 30, y: 20, label: "Job Listings" },
