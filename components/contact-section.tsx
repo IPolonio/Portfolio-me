@@ -75,9 +75,14 @@ export default function ContactSection() {
                 </li>
                 <li className="flex items-center">
                   <span className="text-highlight mr-2">📱</span>
-                  <span className="hover:text-highlight transition-colors">
+                  <a 
+                    href="https://wa.me/18296423667"
+                    target="_blank"
+                    rel="noopener noreferrer" 
+                    className="hover:text-highlight transition-colors"
+                  >
                     WhatsApp: +1 (829) 642-3667
-                  </span>
+                  </a>
                 </li>
                 <li className="flex items-center">
                   <span className="text-highlight mr-2">📍</span>
