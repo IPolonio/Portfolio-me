@@ -33,9 +33,8 @@ const projects = [
     tags: ["Bussiness", "Responsive", "UI Design"],
     thumbnail: "/images/Mattesy/mattesyhome.png",
     images: [
-      "/images/church-1.png",
-      "/images/church-2.png",
-      "/images/church-3.png",
+      "/images/Mattesy/Home.png",
+      
     ],
     description:
       "A complete prototype of a job search / collaboration platform made completely in figma",
@@ -87,13 +86,13 @@ const projects = [
     thumbnail: "/images/jokes/magazine.jpg",
     images: [
       "/images/jokes/magazine.jpg",
-      
     ],
     description:
-      "A comprehensive travel booking platform with immersive destination exploration and streamlined booking process.",
+      "A Satirical magazine design based on the fiction character the joker",
     role: "Senior UI Designer",
     tools: ["Figma", "Photoshop"],
-    figmaEmbed: "https://www.figma.com/embed?embed_host=share&url=https://www.figma.com/file/example",
+    figmaEmbed: "",  
+    liveUrl: ""      
   },
   
 ]
@@ -254,7 +253,10 @@ export default function ProjectsGrid() {
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.3, delay: 0.2 }}
                   >
-                    <div className="relative aspect-video overflow-hidden rounded-lg border border-secondary">
+                    <div className={cn(
+                      "relative overflow-hidden rounded-lg border border-secondary",
+                      (selectedProject?.id === 5 || selectedProject?.id === 2) ? "aspect-[3/4]" : "aspect-video"
+                    )}>
                       <AnimatePresence mode="wait">
                         <motion.div
                           key={currentImageIndex}
@@ -269,8 +271,10 @@ export default function ProjectsGrid() {
                             alt={`${selectedProject.title} - Image ${currentImageIndex + 1}`}
                             fill
                             className={cn(
-                              selectedProject.id === 5 ? "object-contain" : "object-cover"
+                              "object-cover",
+                              (selectedProject.id === 5 || selectedProject.id === 2) && "object-contain"
                             )}
+                            sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                           />
                         </motion.div>
                       </AnimatePresence>
@@ -406,15 +410,18 @@ export default function ProjectsGrid() {
                     </div>
 
                     
-                    <Button 
-                      className="animated-button text-white w-full"
-                      onClick={() => {
-                        const url = selectedProject.liveUrl || selectedProject.figmaEmbed;
-                        if (url) window.open(url, '_blank');
-                      }}
-                    >
-                      View Live Project
-                    </Button>
+                    {/* Only show the button if there's a URL to link to */}
+                    {(selectedProject.liveUrl || selectedProject.figmaEmbed) && (
+                      <Button 
+                        className="animated-button text-white w-full"
+                        onClick={() => {
+                          const url = selectedProject.liveUrl || selectedProject.figmaEmbed;
+                          if (url) window.open(url, '_blank');
+                        }}
+                      >
+                        View Live Project
+                      </Button>
+                    )}
                   </motion.div>
                 </div>
               </div>
