@@ -73,10 +73,10 @@ export default function Navigation() {
             whileHover={{ scale: 1.1 }}
             transition={{ type: "spring", stiffness: 400, damping: 10 }}
           >
-            <span className="font-heading font-bold text-white text-lg">DP</span>
+            <span className="font-heading font-bold text-white text-lg">IP</span>
           </motion.div>
           <span className="font-heading font-bold text-xl hidden sm:inline-block">
-            Design<span className="gradient-text">Portfolio</span>
+            Isaac<span className="gradient-text">Polonio</span>
           </span>
         </Link>
 
@@ -129,10 +129,10 @@ export default function Navigation() {
               <div className="flex items-center justify-between py-4">
                 <Link href="/" className="flex items-center space-x-2" onClick={() => setIsOpen(false)}>
                   <div className="w-10 h-10 rounded-full bg-gradient-to-r from-accent to-glow flex items-center justify-center">
-                    <span className="font-heading font-bold text-white text-lg">DP</span>
+                    <span className="font-heading font-bold text-white text-lg">IP</span>
                   </div>
                   <span className="font-heading font-bold text-xl">
-                    Design<span className="gradient-text">Portfolio</span>
+                    Isaac<span className="gradient-text">Polonio</span>
                   </span>
                 </Link>
                 <Button variant="ghost" size="icon" onClick={() => setIsOpen(false)}>

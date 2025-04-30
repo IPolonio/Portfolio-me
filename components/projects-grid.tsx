@@ -50,44 +50,44 @@ const projects = [
     tags: ["CMS", "Dashboard", "Webflow"],
     thumbnail: "/images/f1/main_page.png",
     images: [
-      "/placeholder.svg?height=800&width=1200",
-      "/placeholder.svg?height=800&width=1200",
-      "/placeholder.svg?height=800&width=1200",
+      "/images/f1/f1-exp.png",
+      "/images/f1/main_page.png",
+      "/images/f1/clock-f1.png",
     ],
     description:
-      "An interactive dashboard for controlling smart home devices with animated transitions and data visualizations.",
-    role: "Motion Designer",
-    tools: ["Figma", "After Effects", "Lottie"],
+      "A webflow site for a F1 racing team showcasing their upcoming races, results, and team history.",
+    role: " Visaul developer",
+    tools: ["Webflow", "HTML/CSS", "Javascript"],
     figmaEmbed: "",
     liveUrl: "https://isaacs-site-8ecc03.webflow.io/"
 },
   {
     id: 4,
-    title: "Health & Fitness App",
-    category: "Figma Prototypes",
-    tags: ["Health", "Mobile", "UX Research"],
-    thumbnail: "/placeholder.svg?height=600&width=800",
+    title: "Career-tools",
+    category: "Development",
+    tags: ["Developer", "Mobile", "UX Research"],
+    thumbnail: "/images/career/career-1.png",
     images: [
-      "/placeholder.svg?height=800&width=1200",
-      "/placeholder.svg?height=800&width=1200",
-      "/placeholder.svg?height=800&width=1200",
+      "/images/career/career-1.png",
+      "/images/career/career-2.png",
+      "/images/career/career-3.png",
     ],
     description:
-      "A fitness tracking application with personalized workout plans and nutrition guidance based on extensive user research.",
+      "Career-tools is a project created to help freshmans and undicided students to select a career path.",
     role: "UX Researcher & Designer",
-    tools: ["Figma", "Maze", "Miro"],
-    figmaEmbed: "https://www.figma.com/embed?embed_host=share&url=https://www.figma.com/file/example",
-  },
+    tools: ["NextJS", "HTML/CSS", "TailwindCSS"],
+    figmaEmbed: "",
+    liveUrl: "https://career-app-tools.vercel.app/"
+},
   {
     id: 5,
-    title: "Travel Booking Platform",
-    category: "Web Design",
-    tags: ["Travel", "Booking", "Responsive"],
-    thumbnail: "/placeholder.svg?height=600&width=800",
+    title: "Poster design for a magazine Jokes",
+    category: "Static Design",
+    tags: ["Design", "Creative"],
+    thumbnail: "/images/jokes/magazine.jpg",
     images: [
-      "/placeholder.svg?height=800&width=1200",
-      "/placeholder.svg?height=800&width=1200",
-      "/placeholder.svg?height=800&width=1200",
+      "/images/jokes/magazine.jpg",
+      
     ],
     description:
       "A comprehensive travel booking platform with immersive destination exploration and streamlined booking process.",
@@ -95,27 +95,11 @@ const projects = [
     tools: ["Figma", "Photoshop"],
     figmaEmbed: "https://www.figma.com/embed?embed_host=share&url=https://www.figma.com/file/example",
   },
-  {
-    id: 6,
-    title: "Productivity Dashboard",
-    category: "Motion Design",
-    tags: ["Productivity", "Dashboard", "Data Viz"],
-    thumbnail: "/placeholder.svg?height=600&width=800",
-    images: [
-      "/placeholder.svg?height=800&width=1200",
-      "/placeholder.svg?height=800&width=1200",
-      "/placeholder.svg?height=800&width=1200",
-    ],
-    description:
-      "A productivity suite with task management, time tracking, and performance analytics visualized through animated charts.",
-    role: "UI/Motion Designer",
-    tools: ["Figma", "After Effects", "Principle"],
-    figmaEmbed: "https://www.figma.com/embed?embed_host=share&url=https://www.figma.com/file/example",
-  },
+  
 ]
 
 // Filter categories
-const categories = ["All", "Figma Prototypes", "Web Design", "Motion Design"]
+const categories = ["All", "Figma Prototypes", "Web Design", "Development", "Static Design"]
 
 export default function ProjectsGrid() {
   const [selectedCategory, setSelectedCategory] = useState("All")
@@ -284,7 +268,9 @@ export default function ProjectsGrid() {
                             src={selectedProject.images[currentImageIndex] || "/placeholder.svg"}
                             alt={`${selectedProject.title} - Image ${currentImageIndex + 1}`}
                             fill
-                            className="object-cover"
+                            className={cn(
+                              selectedProject.id === 5 ? "object-contain" : "object-cover"
+                            )}
                           />
                         </motion.div>
                       </AnimatePresence>
@@ -419,7 +405,7 @@ export default function ProjectsGrid() {
                       </div>
                     </div>
 
-                    // Update the View Live Project button to handle both Figma and live URLs
+                    
                     <Button 
                       className="animated-button text-white w-full"
                       onClick={() => {

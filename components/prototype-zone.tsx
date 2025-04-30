@@ -9,15 +9,16 @@ import Image from 'next/image'
 // Prototype data
 const prototype = {
   id: 1,
-  title: "Mobile Banking App",
+  title: "Mattesy - Job Search Platform",
   description:
-    "Interactive prototype for a mobile banking application with account management and transaction features.",
-  wireframeImage: "/images/Home.svg",  // Note: files should be in public/images/
-  finalImage: "/images/Home.svg",
+    "A complete prototype of a job search and collaboration platform designed to connect professionals and streamline the job search process.",
+  wireframeImage: "/images/Mattesy/Home.png",
+  finalImage: "/images/Mattesy/Home.png",
+  figmaUrl: "https://embed.figma.com/proto/ghWcpViVAluEcyy2Do5Aad/Mattesy?page-id=0%3A1&node-id=28-3641&viewport=45%2C317%2C0.09&scaling=scale-down&content-scaling=fixed&starting-point-node-id=28%3A4903&show-proto-sidebar=1&embed-host=share",
   hotspots: [
-    { x: 30, y: 20, label: "Account Overview" },
-    { x: 70, y: 40, label: "Transaction History" },
-    { x: 50, y: 70, label: "Payment Options" },
+    { x: 30, y: 20, label: "Job Listings" },
+    { x: 70, y: 40, label: "Profile Section" },
+    { x: 50, y: 70, label: "Search Filters" },
   ],
 }
 
@@ -63,7 +64,10 @@ export default function PrototypeZone() {
               </p>
             </div>
 
-            <Button className="w-full bg-accent hover:bg-glow text-white transition-colors duration-300">
+            <Button 
+              className="w-full bg-accent hover:bg-glow text-white transition-colors duration-300"
+              onClick={() => window.open(prototype.figmaUrl, '_blank')}
+            >
               Open in Figma
             </Button>
           </motion.div>
